@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ВХОД В УЧЁТНУЮ\nЗАПИСЬ"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="49dp"
+        android:fontFamily="@font/montserrat_regular" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="50dp"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:errorEnabled="true"
+            android:fontFamily="@font/montserrat_regular">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="20sp"
+                android:hint="Почта"
+                android:maxLines="1"
+                android:backgroundTint="@android:color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:startIconDrawable="@drawable/ic_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        android:fontFamily="@font/montserrat_regular">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:hint="Пароль"
+            android:maxLines="1"
+            android:fontFamily="@font/montserrat_regular"
+            android:backgroundTint="@android:color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|bottom">
+
+        <TextView
+            android:id="@+id/accept_login_button"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+            android:text="вход"
+            android:textSize="20sp"
+            android:background="@drawable/round_button"
+            android:fontFamily="@font/montserrat_regular"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c1d8f8"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/avatar_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center" />
+            <LinearLayout
+                android:id="@+id/lv_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="center"
+                    android:text="изменить аватарку"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_back"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_button"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="главная"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/lt_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/block_elements"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/user" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="НАСТРОЙКИ ДАННЫХ"
+                    android:textAppearance="@style/main_font"
+                    android:textSize="16dp"/>
+                <ImageView
+                    android:id="@+id/im_edit_set"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/pencilsimple" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="имя: "
+                        android:textColor="#061A40"
+                        android:textSize="16dp"/>
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="#061A40"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="вес: "
+                        android:textSize="16dp"
+                        android:textColor="#061A40" />
+                    <EditText
+                        android:id="@+id/et_weight"
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textColor="#061A40"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="целевой вес: "
+                        android:textSize="16dp"
+                        android:textColor="#061A40" />
+                    <EditText
+                        android:id="@+id/et_aim_weight"
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textColor="#061A40"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="рост: "
+                        android:textColor="#061A40"
+                        android:textSize="16dp"/>
+                    <EditText
+                        android:id="@+id/et_tell"
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textColor="#061A40"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="цель: "
+                        android:textColor="#061A40"
+                        android:textSize="16dp"/>
+                    <Spinner
+                        android:id="@+id/sp_aim"
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="#061A40"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="активность: "
+                        android:textColor="#061A40"
+                        android:textSize="16dp"/>
+                    <Spinner
+                        android:id="@+id/sp_activ"
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="#061A40"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:id="@+id/tv_set_cancel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_button"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="center"
+                            android:text="отменить изменения"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp">
+                        <TextView
+                            android:id="@+id/tv_set_true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:background="@drawable/round_button"
+                            android:textSize="11dp"
+                            android:text="подтвердить изменения"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/lt_uvem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/block_elements"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/speakersimplehigh"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="УВЕДОМЛЕНИЯ"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/main_font"
+                        android:textSize="16dp"/>
+
+                    <ImageView
+                        android:id="@+id/im_edit_yved"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/pencilsimple" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="оповещание о воде: "
+                            android:textColor="#061A40"
+                            android:textSize="16dp"/>
+                        <Spinner
+                            android:id="@+id/sp_water"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="#061A40"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_eat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="оповещание о приёме пищи:"
+                            android:textColor="#061A40"
+                            android:textSize="16dp"/>
+                        <Spinner
+                            android:id="@+id/sp_eat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="#061A40"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_button"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="5dp">
+                            <TextView
+                                android:id="@+id/tv_yvem_cancel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/round_button"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:gravity="center"
+                                android:text="отменить изменения"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_button"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_yvem_true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:background="@drawable/round_button"
+                                android:textSize="11dp"
+                                android:text="подтвердить изменения"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pers_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/block_elements"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/user_gear"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="ЛИЧНЫЕ НАСТРОЙКИ"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/main_font"
+                        android:textSize="16dp"/>
+
+                    <ImageView
+                        android:id="@+id/im_edit_per_set"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/pencilsimple"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.3"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="количество добавляемой воды: "
+                        android:textColor="#061A40" />
+                    <Spinner
+                        android:id="@+id/sp_kol_water"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.7"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="#061A40" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="время завтрака:"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#061A40"/>
+
+                        <EditText
+                            android:id="@+id/et_breakfast"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:inputType="time"
+                            android:text="06:30"
+                            android:textColor="#061A40" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="время обеда:"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#061A40"/>
+
+                        <EditText
+                            android:id="@+id/et_lunch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="time"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="11:10"
+                            android:textColor="#061A40"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="время ужина:"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#061A40"/>
+
+                        <EditText
+                            android:id="@+id/et_dinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="time"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="17:00"
+                            android:textColor="#061A40"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="время перекуса:"
+                            android:textColor="#061A40" />
+
+                        <EditText
+                            android:id="@+id/et_snack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="time"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="15:00"
+                            android:textColor="#061A40"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="употреблять воду каждые"
+                            android:textColor="#061A40" />
+
+                        <EditText
+                            android:id="@+id/et_water"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:layout_weight="0.1"
+                            android:inputType="time"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="1"
+                            android:textColor="#061A40"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="минут"
+                            android:textColor="#061A40" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_button"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_set_per_cancel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/round_button"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:gravity="center"
+                                android:text="отменить изменения"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_button"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp">
+                            <TextView
+                                android:id="@+id/tv_set_per_true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:background="@drawable/round_button"
+                                android:textSize="11dp"
+                                android:text="подтвердить изменения"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_button"
+            android:layout_marginRight="150dp"
+            android:layout_marginLeft="150dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="выход"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_regular"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

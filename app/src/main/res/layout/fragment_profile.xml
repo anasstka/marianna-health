@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    android:scrollbars="none"
+
+    tools:context=".ProfileFragment"
+
+    android:background="#c1d8f8">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="90dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="167dp"
+                android:background="#468faf"
+                android:rotation="180"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/btn_set"
+                android:layout_width="51dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_settings"
+                app:tint="#073b4c"/>
+
+            <ImageView
+                android:id="@+id/btn_switch_day_ahead"
+                android:layout_width="167dp"
+                android:layout_height="146dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="124dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/ic_women1" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="zzgaw"
+                android:layout_gravity="center"
+                android:textColor="#061A40"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="35dp"
+
+                android:background="@drawable/block_elements"
+                android:orientation="horizontal"
+
+                android:padding="5dp"
+                android:translationZ="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/people_sex"
+                    android:layout_marginTop="5dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="пол"
+                        android:textColor="#061A40"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="женский"
+                        android:textStyle="bold"
+                        android:textColor="#061A40"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="35dp"
+
+                android:background="@drawable/block_elements"
+                android:orientation="horizontal"
+
+                android:padding="5dp"
+                android:translationZ="5dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/user"
+                    android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="вес"
+                        android:textColor="#061A40"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="61 кг"
+                        android:textStyle="bold"
+                        android:textColor="#061A40"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginRight="35dp"
+
+                android:background="@drawable/block_elements"
+                android:orientation="horizontal"
+
+                android:padding="5dp"
+                android:translationZ="5dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="17dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="дата рождения"
+                        android:textColor="#061A40"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_date_born"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10.01.2002"
+                        android:textStyle="bold"
+                        android:textColor="#061A40"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="35dp"
+
+                android:background="@drawable/block_elements"
+                android:orientation="horizontal"
+
+                android:padding="5dp"
+                android:translationZ="5dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="17dp"
+                    android:src="@drawable/path"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="цель"
+                        android:textColor="#061A40"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_aim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="поддержать вес"
+                        android:textStyle="bold"
+                        android:textColor="#061A40"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ckal_by_diet"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/water"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+
+                android:padding="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

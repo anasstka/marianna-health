@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Marianna Health</string>
+
+    <string name="title_home">Главная</string>
+    <string name="title_profile">Профиль</string>
+
+    <string name="recommended_kcal">Рекомендуемые калории</string>
+    <string name="proteins">Белки</string>
+    <string name="fats">Жиры</string>
+    <string name="carbohydrates">Углеводы</string>
+    <string name="water">Вода</string>
+    <string name="ckal_by_diet">Калории по рационам</string>
+    <string name="dinner">Ужин</string>
+    <string name="snack">Перекус</string>
+</resources>

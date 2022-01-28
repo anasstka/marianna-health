@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".TestingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="данные о вас"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="25dp"
+            android:textColor="#104C99"
+            android:fontFamily="@font/montserrat_regular" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:errorEnabled="true"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_name"
+            app:counterEnabled="true"
+            app:counterMaxLength="25"
+            android:fontFamily="@font/montserrat_regular">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@android:color/black"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="Имя"
+                android:maxLength="30"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_gender"
+            android:fontFamily="@font/montserrat_regular">
+            <AutoCompleteTextView
+                android:id="@+id/et_user_sex_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="none"
+                android:hint="Пол"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:errorEnabled="true"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_high"
+            android:fontFamily="@font/montserrat_regular">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_high"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:hint="Рост"
+            android:maxLines="1"
+            android:maxLength="3"
+            android:fontFamily="@font/montserrat_regular"
+            android:backgroundTint="@android:color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_data_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:startIconDrawable="@drawable/ic_date"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/et_data_birth"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@android:color/black"
+                android:hint="Дата рождения"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_style_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_style_life"
+
+            android:fontFamily="@font/montserrat_regular">
+            <AutoCompleteTextView
+                android:id="@+id/et_life_style_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="none"
+                android:hint="Образ жизни"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_purpose_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_purpose"
+            android:fontFamily="@font/montserrat_regular">
+            <AutoCompleteTextView
+                android:id="@+id/et_purpose_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="none"
+                android:hint="Цель"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_start_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:errorEnabled="true"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_weight"
+            android:fontFamily="@font/montserrat_regular">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_start_weight"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:hint="Начальный вес"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:backgroundTint="@android:color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_finish_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:errorEnabled="true"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_weight"
+            android:fontFamily="@font/montserrat_regular">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_finish_weight"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:hint="Целевой вес"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:backgroundTint="@android:color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/continue_button"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_button"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="продолжить"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

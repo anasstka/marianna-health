@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/alert_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите аватар"
+        android:textSize="25dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_man1"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/ic_man2"
+            android:clickable="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="96dp"
+            android:layout_height="128dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/ic_women1"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="96dp"
+            android:layout_height="128dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/women_2"
+            android:clickable="true" />
+    </RelativeLayout>
+</LinearLayout>

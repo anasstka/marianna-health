@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <LinearLayout
+        android:id="@+id/btn_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="219dp"
+            android:layout_height="25dp"
+            android:textAlignment="center"
+            android:background="@drawable/round_button_add_product"
+            android:text="добавить еду"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"/>
+    </LinearLayout>
+</LinearLayout>

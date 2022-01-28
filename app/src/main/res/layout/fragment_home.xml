@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    android:scrollbars="none"
+
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/backgroundColor"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="90dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/block_elements"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+
+            android:padding="4dp"
+            android:translationZ="5dp">
+
+            <ImageView
+                android:id="@+id/btn_switch_day_back"
+
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_arrow" />
+
+            <TextView
+                android:id="@+id/tv_date"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="11.03.2021"
+                android:textAppearance="@style/font_date"
+                android:textIsSelectable="false"
+                android:textStyle="bold"
+                android:translationZ="5dp" />
+
+            <ImageView
+                android:id="@+id/btn_switch_day_ahead"
+
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:rotation="180"
+                android:scaleType="center"
+                android:src="@drawable/ic_arrow" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_calorie_chart"
+
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+
+            android:orientation="horizontal">
+
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/daily_calorie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:rotationY="180" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_daily_kcal_in_chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:gravity="center"
+                    android:text="1200"
+                    android:textAppearance="@style/main_font"
+                    android:textStyle="bold"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:gravity="center"
+                    android:text="калорий"
+                    android:textAppearance="@style/main_font" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/kcal_per_day"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_calorie_chart"
+            android:layout_marginTop="12dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:text="Осталось калорий"
+                android:textAppearance="@style/main_font" />
+
+            <TextView
+                android:id="@+id/tv_remaining_kcal"
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="1265"
+                android:textAppearance="@style/main_font"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recommended_kcal"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kcal_per_day"
+            android:layout_marginTop="12dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:text="@string/recommended_kcal"
+                android:textAppearance="@style/main_font" />
+
+            <TextView
+                android:id="@+id/tv_recommended_kcal"
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="1265"
+                android:textAppearance="@style/main_font"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/table_add_info"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recommended_kcal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/block_elements"
+            android:elevation="5dp"
+            android:padding="5dp"
+            android:translationZ="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="@string/proteins"
+                    android:textAppearance="@style/main_font" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="@string/fats"
+                    android:textAppearance="@style/main_font" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="@string/carbohydrates"
+                    android:textAppearance="@style/main_font" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_proteins"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="112"
+                    android:textAppearance="@style/main_font"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_fats"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="112"
+                    android:textAppearance="@style/main_font"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_carbohydrates"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="112"
+                    android:textAppearance="@style/main_font"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <RelativeLayout
+            android:id="@+id/water"
+
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/table_add_info"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/block_elements"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:translationZ="5dp">
+
+            <TextView
+                android:id="@+id/water_"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingEnd="30dp"
+                android:text="@string/water"
+                android:textAppearance="@style/main_font" />
+
+            <TextView
+                android:id="@+id/tv_water"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toEndOf="@id/water_"
+                android:gravity="center_vertical"
+                android:text="0,25"
+                android:textAppearance="@style/main_font"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@id/tv_water"
+                android:gravity="center_vertical"
+                android:text="л"
+                android:textAppearance="@style/main_font" />
+
+            <ImageView
+                android:id="@+id/btn_del_water"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="false"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/btn_add_water"
+                android:src="@drawable/ic_delete_water" />
+
+            <ImageView
+                android:id="@+id/btn_add_water"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_add_water" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ckal_by_diet"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/water"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:text="@string/ckal_by_diet"
+                android:textAppearance="@style/main_font" />
+
+            <LinearLayout
+                android:id="@+id/container_calorie_chart_2"
+
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+
+                android:orientation="horizontal">
+
+                <lecho.lib.hellocharts.view.PieChartView
+                    android:id="@+id/calorie_chart_by_diet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chart_legend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_chart_legend_breakfast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/chart_legend_icon"
+                        app:tint="#75C5FF" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Завтрак"
+                        android:textAppearance="@style/main_font"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_chart_legend_lunch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/chart_legend_icon"
+                        app:tint="#4059AD" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Обед"
+                        android:textAppearance="@style/main_font"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_chart_legend_dinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/chart_legend_icon"
+                        app:tint="#119DA4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/dinner"
+                        android:textAppearance="@style/main_font"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_chart_legend_snack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/chart_legend_icon"
+                        app:tint="#97D8C4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/snack"
+                        android:textAppearance="@style/main_font"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

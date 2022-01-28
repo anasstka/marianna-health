@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MainTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--        <item name="colorPrimaryVariant">#3C69A5</item>-->
+        <!--        <item name="colorOnPrimary">#fff</item>-->
+
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <!--        <item name="colorSecondaryVariant">#3C69A5</item>-->
+        <!--        <item name="colorOnSecondary">#fff</item>-->
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

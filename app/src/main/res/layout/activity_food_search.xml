@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1D8F8"
+
+    android:paddingLeft="10dp"
+    android:paddingTop="20dp"
+    android:paddingRight="10dp"
+
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/btn_back_to_ration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/arrow_back_3pt"/>
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_back_to_ration"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <EditText
+            android:id="@+id/productsFilter"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/round_edit_text"
+            android:textAppearance="@style/main_font"
+            android:hint="Начните вводить продукт или блюдо..."
+            android:padding="13dp"
+            android:maxLines="1"
+            android:textColor="#695534"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_search"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/productList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="font_date">
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:textColor">
+            @color/fontColor
+        </item>
+        <item name="fontFamily">
+            @font/montserrat_regular
+        </item>
+    </style>
+
+    <style name="main_font">
+        <item name="android:textSize">
+            14sp
+        </item>
+        <item name="android:textColor">
+            @color/fontColor
+        </item>
+        <item name="fontFamily">
+            @font/montserrat_regular
+        </item>
+        <item name="textAllCaps">
+            true
+        </item>
+    </style>
+
+    <style name="main_font_without_caps">
+        <item name="android:textSize">
+            14sp
+        </item>
+        <item name="android:textColor">
+            @color/fontColor
+        </item>
+        <item name="fontFamily">
+            @font/montserrat_regular
+        </item>
+    </style>
+
+    <style name="title_font">
+        <item name="android:textSize">
+            16sp
+        </item>
+        <item name="android:textColor">
+            @color/fontColor
+        </item>
+        <item name="fontFamily">
+            @font/montserrat_regular
+        </item>
+        <item name="textAllCaps">
+            true
+        </item>
+    </style>
+
+    <style name="font_button">
+        <item name="android:textSize">
+            12sp
+        </item>
+        <item name="android:textColor">
+            @color/fontColor
+        </item>
+        <item name="fontFamily">
+            @font/montserrat_regular
+        </item>
+    </style>
+
+</resources>

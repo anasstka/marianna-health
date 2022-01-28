@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "205949233898",
+    "project_id": "mariannahealth-b98c2",
+    "storage_bucket": "mariannahealth-b98c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205949233898:android:4ce98e25f3ba0a20cfc593",
+        "android_client_info": {
+          "package_name": "com.example.mhapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205949233898-1aq12tn5njmftpeo6lksn8nfm4p5fk3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3CUWRedd_Npg1agLARs719Pb4vDd9MJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205949233898-1aq12tn5njmftpeo6lksn8nfm4p5fk3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205949233898:android:5358459aec37625bcfc593",
+        "android_client_info": {
+          "package_name": "com.mobiletech.mhapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205949233898-7sq2lp2kgn2p6qfcj40fg8edkvudmn9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobiletech.mhapp",
+            "certificate_hash": "8412ed48c50e2701bf885f819832c49e2dc06aa5"
+          }
+        },
+        {
+          "client_id": "205949233898-1aq12tn5njmftpeo6lksn8nfm4p5fk3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3CUWRedd_Npg1agLARs719Pb4vDd9MJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205949233898-1aq12tn5njmftpeo6lksn8nfm4p5fk3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
